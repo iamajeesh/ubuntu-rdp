@@ -13,3 +13,9 @@ Requirements :
 - Real Vnc Viewer Or Tight Vnc
 
 
+add these two at the end of nano ~/.vnc/xstartup
+lxterminal &
+/usr/bin/lxsession -s LXDE &
+
+use this to start VNC server
+vncserver :1 -geometry 1024x768 -depth 16 -pixelformat rgb565
